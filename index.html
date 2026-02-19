@@ -31,20 +31,45 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-pattern"></div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
         <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Sangita Dwari</h1>
-                <p class="hero-subtitle">BSc Nursing Student</p>
-                <p class="hero-institution">NSMS Nursing Institute</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="https://www.linkedin.com/in/sangita-dwari-579026350/" target="_blank" class="btn btn-secondary">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
+            <div class="hero-profile">
+                <div class="profile-image-wrapper">
+                    <div class="profile-ring"></div>
+                    <div class="profile-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop" alt="Sangita Dwari" id="profileImg">
+                        <div class="profile-icon">
+                            <i class="fas fa-user-nurse"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Sangita Dwari</h1>
+                    <p class="hero-subtitle"><i class="fas fa-graduation-cap"></i> BSc Nursing Student</p>
+                    <p class="hero-institution"><i class="fas fa-hospital"></i> NSMS Nursing Institute</p>
+                    <p class="hero-tagline">Dedicated to Compassionate Care & Healthcare Excellence</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <i class="fas fa-user"></i> Learn More
+                        </a>
+                        <a href="https://www.linkedin.com/in/sangita-dwari-579026350/" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
+            <span>Scroll Down</span>
             <a href="#about"><i class="fas fa-chevron-down"></i></a>
         </div>
     </section>
@@ -54,31 +79,82 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user-nurse"></i>
+                <div class="about-left">
+                    <div class="about-image-card">
+                        <div class="card-decoration"></div>
+                        <div class="about-image">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500&h=600&fit=crop" alt="Nursing Professional" id="aboutImg">
+                            <div class="about-badge">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Future Nurse</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h4>BSc Nursing</h4>
+                                <p>Current Degree</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h4>Clinical Training</h4>
+                                <p>Hands-on Experience</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h4>Patient Care</h4>
+                                <p>Core Focus</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>Dedicated Nursing Student</h3>
-                    <p>I am a passionate BSc Nursing student at NSMS Nursing Institute, committed to providing compassionate and evidence-based patient care. With a strong foundation in nursing principles and clinical practice, I am dedicated to making a positive impact in healthcare.</p>
-                    <p>My goal is to become a skilled and empathetic nurse who can contribute to improving patient outcomes and promoting health and wellness in the community.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <i class="fas fa-graduation-cap"></i>
-                            <h4>BSc Nursing</h4>
-                            <p>Current Degree</p>
+                    <div class="about-intro">
+                        <span class="intro-label">Introduction</span>
+                        <h3>Dedicated Nursing Student</h3>
+                    </div>
+                    <p class="lead-text">I am a passionate BSc Nursing student at NSMS Nursing Institute, committed to providing compassionate and evidence-based patient care.</p>
+                    <p>With a strong foundation in nursing principles and clinical practice, I am dedicated to making a positive impact in healthcare. My journey in nursing is driven by a deep commitment to patient welfare and a desire to contribute meaningfully to the healthcare community.</p>
+                    <p>My goal is to become a skilled and empathetic nurse who can contribute to improving patient outcomes and promoting health and wellness in the community. I believe in continuous learning and staying updated with the latest healthcare practices.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Compassionate Patient Care</span>
                         </div>
-                        <div class="stat">
-                            <i class="fas fa-hospital"></i>
-                            <h4>Clinical Training</h4>
-                            <p>Hands-on Experience</p>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Evidence-Based Practice</span>
                         </div>
-                        <div class="stat">
-                            <i class="fas fa-heart"></i>
-                            <h4>Patient Care</h4>
-                            <p>Core Focus</p>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Team Collaboration</span>
                         </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Continuous Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Contact Me
+                        </a>
+                        <a href="#experience" class="btn btn-outline-primary">
+                            <i class="fas fa-briefcase"></i> View Experience
+                        </a>
                     </div>
                 </div>
             </div>

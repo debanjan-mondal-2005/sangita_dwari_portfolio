@@ -1,3 +1,34 @@
+// ===== PROFILE IMAGE HANDLING =====
+// Show placeholder icon if image fails to load
+const profileImg = document.getElementById('profileImg');
+const aboutImg = document.getElementById('aboutImg');
+
+if (profileImg) {
+    profileImg.addEventListener('error', function() {
+        this.style.display = 'none';
+        const iconElement = this.nextElementSibling;
+        if (iconElement) {
+            iconElement.style.display = 'flex';
+        }
+    });
+
+    profileImg.addEventListener('load', function() {
+        this.style.display = 'block';
+        const iconElement = this.nextElementSibling;
+        if (iconElement) {
+            iconElement.style.display = 'none';
+        }
+    });
+}
+
+if (aboutImg) {
+    aboutImg.addEventListener('error', function() {
+        this.style.display = 'none';
+        // Fallback to gradient background
+        this.parentElement.style.background = 'linear-gradient(135deg, #0a7ea4 0%, #06b6d4 100%)';
+    });
+}
+
 // ===== NAVIGATION TOGGLE =====
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
